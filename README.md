@@ -40,13 +40,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+Express is a node module that can be used to build RESTful web services that work with json and serve static content like HTML.
+
 - [ ] Describe Middleware?
+
+Middleware provides a way to extend and add on to the features provided by express such as logging, authentication, and validation.
 
 - [ ] Describe a Resource?
 
+In REST everything is a resource. Each resource can be accessed via URI and resource management happens via a HTTP methods.
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+An api can return built in messages that state that the request was successful and error messages if it was not.
+
 - [ ] How can we partition our application into sub-applications?
+
+You can partition apps into sub apps in order to keep code clean and routes separate from each other. Helps with scalability.
 
 ## Minimum Viable Product
 
