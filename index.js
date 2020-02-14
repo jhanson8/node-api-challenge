@@ -1,5 +1,9 @@
 /* jshint esversion: 6 */
-const server = require("./server.js");
+const server = require("./server");
+
+server.get("/", (req, res) => {
+  res.send(`<h2>Node API Challenge!</h2>`);
+});
 
 server.listen(9000, () => {
   console.log("\n* Server Running on http://localhost:9000 *\n");

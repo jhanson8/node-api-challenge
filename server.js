@@ -4,16 +4,18 @@ const express = require("express");
 const server = express();
 server.use(express.json());
 
-// const userRouter = require("./users/userRouter.js");
+const projectRouter = require("./api/projectRouter");
+const actionRouter = require("./api/actionRouter");
 
 // Logger MiddleWare execution
 server.use(logger);
 
-// server.use("/api/users", userRouter);
+server.use("/api/actions", actionRouter);
+server.use("/api/projects", projectRouter);
 
-server.get("/", (req, res) => {
-  res.send(`<h2>Node API Challenge!</h2>`);
-});
+// server.get("/", (req, res) => {
+//   res.send(`<h2>Node API Challenge!</h2>`);
+// });
 
 //custom middleware
 
